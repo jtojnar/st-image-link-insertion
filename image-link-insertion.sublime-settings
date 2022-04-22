@@ -2,4 +2,18 @@
   // Image code template.
   // `{url}` will be replaced by the image’s relative path to the document; use `{{` and `}}` for writing curly braces.
   "image_code": "![]({url})\n",
+
+  // Additional code can be inserted before and after the inserted block.
+  // This setting controls how many images need to be inserted for wrapping to apply.
+  // The following values are accepted:
+  //  - "infinity": Never wrap
+  //  - "multiple": Wrap when there is more than one image
+  //  - "zero": Always wrap
+  "wrapping_mode": "infinity",
+
+  // Code to insert before the beginning of the inserted block, when applicable.
+  "wrapping_prologue": "<div class=\"figuregroup\">\n",
+
+  // Code to insert after the end of the inserted block, when applicable.
+  "wrapping_epilogue": "</div>\n",
 }

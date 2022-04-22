@@ -14,6 +14,10 @@ class ImageLinkInsertionInsertImagesCommand(sublime_plugin.TextCommand):
         if len(files) > 0:
             settings = sublime.load_settings("image-link-insertion.sublime-settings")
             image_code = settings.get("image_code")
+            wrapping_mode = settings.get("wrapping_mode")
+            wrapping_prologue = settings.get("wrapping_prologue")
+            wrapping_epilogue = settings.get("wrapping_epilogue")
+            wrapping_enabled = wrapping_mode == "zero" or (wrapping_mode == "multiple" and len(files) > 1)
 
             if edited_file is not None:
                 edited_file_location = os.path.dirname(edited_file)
@@ -22,9 +26,11 @@ class ImageLinkInsertionInsertImagesCommand(sublime_plugin.TextCommand):
                     for absolute_path in files
                 ]
 
-            text = ""
+            text = wrapping_prologue if wrapping_enabled else ""
 
             for file in files:
                 text += image_code.format(url=file)
+
+            text += wrapping_epilogue if wrapping_enabled else ""
 
             self.view.insert(edit, self.view.sel()[0].begin(), text)
