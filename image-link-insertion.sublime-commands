@@ -1,0 +1,13 @@
+[
+	{
+		"caption": "Image Link Insertion: Insert images",
+		"command": "image_link_insertion_choose_images"
+	},
+	{
+		"caption": "image-link-insertion: Open Readme",
+		"command": "open_file",
+		"args": {
+			"file": "${packages}/image-link-insertion/README.md"
+		}
+	},
+]
