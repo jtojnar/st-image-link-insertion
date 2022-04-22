@@ -14,6 +14,7 @@ class ImageLinkInsertionInsertImagesCommand(sublime_plugin.TextCommand):
         if len(files) > 0:
             settings = sublime.load_settings("image-link-insertion.sublime-settings")
             image_code = settings.get("image_code")
+            fix_slashes = settings.get("fix_slashes")
             wrapping_mode = settings.get("wrapping_mode")
             wrapping_prologue = settings.get("wrapping_prologue")
             wrapping_epilogue = settings.get("wrapping_epilogue")
@@ -24,6 +25,12 @@ class ImageLinkInsertionInsertImagesCommand(sublime_plugin.TextCommand):
                 files = [
                     os.path.relpath(absolute_path, edited_file_location)
                     for absolute_path in files
+                ]
+
+            if fix_slashes:
+                files = [
+                    path.replace(os.path.sep, '/')
+                    for path in files
                 ]
 
             text = wrapping_prologue if wrapping_enabled else ""

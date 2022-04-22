@@ -3,6 +3,9 @@
   // `{url}` will be replaced by the image’s relative path to the document; use `{{` and `}}` for writing curly braces.
   "image_code": "![]({url})\n",
 
+  // Whether to replace backslashes in paths with forward slashes
+  "fix_slashes": true,
+
   // Additional code can be inserted before and after the inserted block.
   // This setting controls how many images need to be inserted for wrapping to apply.
   // The following values are accepted:
