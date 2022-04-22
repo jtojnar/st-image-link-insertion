@@ -8,3 +8,5 @@ This is a port of my [Atom package](https://github.com/jtojnar/markdown-image-in
 
 1. Click `Tools` → `Insert images as Markdown`.
 2. Select images using the dialogue that will open.
+
+Inserted code can be customized in settings.

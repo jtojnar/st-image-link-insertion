@@ -28,6 +28,15 @@
 									"file": "${packages}/image-link-insertion/README.md"
 								}
 							},
+							{ "caption": "-" },
+							{
+								"caption": "Settings",
+								"command": "edit_settings",
+								"args": {
+									"base_file": "${packages}/image-link-insertion/image-link-insertion.sublime-settings",
+									"default": "{\n\t$0\n}\n"
+								}
+							},
 						]
 					}
 				]

@@ -1,5 +1,13 @@
 [
 	{
+		"caption": "Preferences: image-link-insertion",
+		"command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/image-link-insertion/image-link-insertion.sublime-settings",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
+	{
 		"caption": "Image Link Insertion: Insert images",
 		"command": "image_link_insertion_choose_images"
 	},
