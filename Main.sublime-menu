@@ -4,7 +4,7 @@
 		"children":
 		[
 			{
-				"caption": "Insert images as Markdown",
+				"caption": "Insert images as markup",
 				"mnemonic": "M",
 				"command": "image_link_insertion_choose_images"
 			}
