@@ -1,6 +1,6 @@
 [
 	{
-		"caption": "Preferences: image-link-insertion",
+		"caption": "Preferences: Image Link Insertion",
 		"command": "edit_settings",
 		"args": {
 			"base_file": "${packages}/image-link-insertion/image-link-insertion.sublime-settings",
@@ -12,7 +12,7 @@
 		"command": "image_link_insertion_choose_images"
 	},
 	{
-		"caption": "image-link-insertion: Open Readme",
+		"caption": "Image Link Insertion: Open README",
 		"command": "open_file",
 		"args": {
 			"file": "${packages}/image-link-insertion/README.md"

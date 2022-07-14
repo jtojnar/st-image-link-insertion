@@ -19,7 +19,7 @@
 				"id": "package-settings",
 				"children": [
 					{
-						"caption": "image-link-insertion",
+						"caption": "Image Link Insertion",
 						"children": [
 							{
 								"caption": "README",
