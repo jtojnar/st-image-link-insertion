@@ -1,3 +1,5 @@
+from collections import ChainMap
+from sublime_lib import NamedSettingsDict
 import os
 import sublime
 import sublime_plugin
@@ -12,7 +14,11 @@ class ImageLinkInsertionInsertImagesCommand(sublime_plugin.TextCommand):
         edited_file = self.view.file_name()
 
         if len(files) > 0:
-            settings = sublime.load_settings("image-link-insertion.sublime-settings")
+            settings = ChainMap(
+                self.view.settings().get('image-link-insertion', {}),
+                self.view.window().settings().get('image-link-insertion', {}),
+                NamedSettingsDict('image-link-insertion')
+            )
             image_code = settings.get("image_code")
             fix_slashes = settings.get("fix_slashes")
             wrapping_mode = settings.get("wrapping_mode")

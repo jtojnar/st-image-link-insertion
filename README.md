@@ -10,3 +10,18 @@ This is a port of my [Atom package](https://github.com/jtojnar/markdown-image-in
 2. Select images using the dialogue that will open.
 
 Inserted code can be customized in settings.
+
+## Customization
+
+You can adjust any of the [supported configuration keys](image-link-insertion.sublime-settings) in the editor-wide settings (accessible via `Preferences` → `Package Settings` → `Image Link Insertion` → `Settings`).
+
+You can also override the options for [individual projects](https://www.sublimetext.com/docs/projects.html#settings-key) or [views, based on active syntax](https://www.sublimetext.com/docs/settings.html#syntax-specific-settings) – in those cases, follow the same syntax as the package settings but nest it under `image-link-insertion` key (for projects, also under the `settings` key):
+
+```json
+// These settings override both User and Default settings for the LaTeX syntax
+{
+    "image-link-insertion": {
+        "image_code": "\\begin{{figure}}\n\\includegraphics{{{url}}}\n\\end{{figure}}\n"
+    }
+}
+```
