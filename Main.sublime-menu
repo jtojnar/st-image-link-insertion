@@ -5,7 +5,7 @@
 		[
 			{
 				"caption": "Insert images as markup",
-				"mnemonic": "M",
+				"mnemonic": "m",
 				"command": "image_link_insertion_choose_images"
 			}
 		]

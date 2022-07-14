@@ -1,5 +1,8 @@
 # image-link-insertion changes
 
+## 0.1.2 – 2022-07-14
+- Fix menu mnemonic.
+
 ## 0.1.1 – 2022-07-03
 - Change menu item label.
 
