@@ -25,7 +25,7 @@
 								"caption": "README",
 								"command": "open_file",
 								"args": {
-									"file": "${packages}/image-link-insertion/README.md"
+									"file": "${packages}/Image Link Insertion/README.md"
 								}
 							},
 							{ "caption": "-" },
@@ -33,7 +33,7 @@
 								"caption": "Settings",
 								"command": "edit_settings",
 								"args": {
-									"base_file": "${packages}/image-link-insertion/image-link-insertion.sublime-settings",
+									"base_file": "${packages}/Image Link Insertion/image-link-insertion.sublime-settings",
 									"default": "{\n\t$0\n}\n"
 								}
 							},

@@ -11,6 +11,18 @@ This is a port of my [Atom package](https://github.com/jtojnar/markdown-image-in
 
 Inserted code can be customized in settings.
 
+## Installation
+
+You can install this package using [Package Control](https://packagecontrol.io/installation) using the name “Image Link Insertion”.
+
+For development, you will want to clone the repository into “Image Link Insertion” directory in the Sublime Text’s `Packages` directory (`Preferences` → `Browse Packages…`):
+
+```
+git clone git@github.com:jtojnar/sublime-image-link-insertion.git 'Image Link Insertion'
+```
+
+(Or create a symlink with such name from your projects directory.)
+
 ## Customization
 
 You can adjust any of the [supported configuration keys](image-link-insertion.sublime-settings) in the editor-wide settings (accessible via `Preferences` → `Package Settings` → `Image Link Insertion` → `Settings`).
